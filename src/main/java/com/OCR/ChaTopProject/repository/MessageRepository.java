@@ -1,4 +1,6 @@
 package com.OCR.ChaTopProject.repository;
 
-public interface MessageRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import com.OCR.ChaTopProject.model.Message;
+public interface MessageRepository extends JpaRepository<Message, Long> {
 }
