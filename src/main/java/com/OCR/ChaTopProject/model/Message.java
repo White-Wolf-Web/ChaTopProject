@@ -6,8 +6,8 @@ import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 import java.util.Date;
 
-@Entity                   // Indique que cette classe est une entité JPA.
-@Table(name = "MESSAGES") // Spécifie le nom de la table dans la base de données.
+@Entity                   // est une annotation qui indique que la classe correspond à une table de la base de données.
+@Table(name = "MESSAGES") // indique le nom de la table associée.
 @Data                     // Génère automatiquement les getters, setters, et d'autres méthodes.
 @NoArgsConstructor        // Génère un constructeur sans argument.
 @AllArgsConstructor       // Génère un constructeur avec un argument pour chaque champ.

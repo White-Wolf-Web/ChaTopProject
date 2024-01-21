@@ -7,11 +7,11 @@ import lombok.NoArgsConstructor;       // @NoArgsConstructor génère un constru
 import lombok.AllArgsConstructor;      // @AllArgsConstructor génère un constructeur avec tous les arguments.
 import java.util.Date;
 
-@Entity                                // Cette entité sera mappée à une table dans la base de données.
+@Entity                                // est une annotation qui indique que la classe correspond à une table de la base de données.
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "RENTALS")               // Spécifie le nom de la table dans la base de données
+@Table(name = "RENTALS")               // indique le nom de la table associée.
 
 public class Rental {
 

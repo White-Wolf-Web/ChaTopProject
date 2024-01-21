@@ -6,9 +6,9 @@ import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 import java.util.Date;
 
-@Entity                // Indique que cette classe est une entité JPA qui sera mappée à une table de base de données.
-@Table(name = "USERS") // Spécifie le nom de la table dans la base de données à laquelle cette entité est mappée.
-@Data                  // Génère automatiquement les getters, setters, equals, hashCode et toString...
+@Entity                // est une annotation qui indique que la classe correspond à une table de la base de données.
+@Table(name = "USERS") // indique le nom de la table associée.
+@Data                  //  est une annotation Lombok. Nul besoin d’ajouter les getters et les setters.
 @NoArgsConstructor     // Génère un constructeur sans argument.
 @AllArgsConstructor    // Génère un constructeur avec un argument pour chaque champ.
 
