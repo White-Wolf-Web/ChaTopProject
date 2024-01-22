@@ -6,6 +6,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
+    User findByEmail(String email);       // La mise en œuvre est automatiquement gérée par Spring Data JPA selon la convention de nommage.
 }
 
 

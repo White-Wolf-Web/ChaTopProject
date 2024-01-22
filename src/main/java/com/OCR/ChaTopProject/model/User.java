@@ -14,11 +14,11 @@ import java.util.Date;
 
 public class User {
 
-    @Id                                                 // Marque ce champ comme la clé primaire de l'entité.
+    @Id                                     // Marque ce champ comme la clé primaire de l'entité.
     @GeneratedValue(strategy = GenerationType.IDENTITY) // Configure la génération automatique de la clé.
-    private Long id;                                    // Correspond à `id` dans la table USERS.
+    private Long id;                        // Correspond à `id` dans la table USERS.
 
-    @Column(name = "email", length = 255)               // Mappe ce champ à la colonne `email`
+    @Column(name = "email", length = 255)   // Mappe ce champ à la colonne `email`
     private String email;
 
     @Column(name = "name", length = 255)
@@ -27,8 +27,8 @@ public class User {
     @Column(name = "password", length = 255)
     private String password;
 
-    @Column(name = "created_at")  // L'attribut name dans l'annotation @Column spécifie explicitement le nom de la colonne dans la BDE.
-    private Date createdAt;       // le champ Java createdAt doit être mappé à la colonne nommée created_at dans la table de base de données. On se doit de respecter ici le CamelCase
+    @Column(name = "created_at")            // L'attribut name dans l'annotation @Column spécifie explicitement le nom de la colonne dans la BDE.
+    private Date createdAt;                 // le champ Java createdAt doit être mappé à la colonne nommée created_at dans la table de base de données. On se doit de respecter ici le CamelCase
 
     @Column(name = "updated_at")
     private Date updatedAt;
